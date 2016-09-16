@@ -1,0 +1,46 @@
+----------------------OUTPUT------------------------------------
+
+Enter Customer Name: Joe Smith
+Enter Customer Street with Number: 123 Fake Street
+Enter Customer City: Toronto
+Enter Customer Province: Ontario
+Enter Customer Postal Code: M5W 2R9
+Enter Customer Home Phone #: 905-343-9955
+Enter Car Serial Number (MYYCMDL#): A12BINT2
+Enter Car Make: ACURA
+Enter Car Model: INTEGRA
+Enter Car Year: 2012
+Enter Car Colour: BLUE
+Enter Option Code: E01
+Enter Option Sale Price: 34989
+Enter Salesman Name: Steve Seller
+Enter Total Sale Price: 38439
+Enter Discount Amount: 2000
+Enter License Fee: 200
+Enter Commission: 100
+Enter Trade-in Serial: M10SCL1
+Enter Trade-in Allowance: 2500
+Fire Insurance Coverage (Y/N): y
+Collision Insurance Coverage (Y/N): N
+Liability Insurance Coverage (Y/N): N
+Property Insurance Coverage (Y/N): Y
+old   7:       VALUES ('&p_cname', '&p_cstreet', '&p_ccity', '&p_cprov', '&p_cpostal', '&p_chphone');
+new   7:       VALUES ('Joe Smith', '123 Fake Street', 'Toronto', 'Ontario', 'M5W 2R9', '905-343-9955');
+old  10:       VALUES (UPPER('&p_serial'), '&p_cname', UPPER('&p_make'), UPPER('&p_model'), '&p_cyear', '&p_color', 'Standard', 'Standard');
+new  10:       VALUES (UPPER('A12BINT2'), 'Joe Smith', UPPER('ACURA'), UPPER('INTEGRA'), '2012', 'BLUE', 'Standard', 'Standard');
+old  13:       VALUES (TO_CHAR(salesinvseq.NEXTVAL,'FM099999'), '&p_cname', '&p_salesman', SYSDATE, '&p_serial', &p_totalprice, &p_discount, (&p_totalprice - &p_discount), ((&p_totalprice - &p_discount) * 0.13), &p_licfee, &p_commission, UPPER('&p_tradeserial'), &p_tradeallow, UPPER('&p_fire'), UPPER('&p_collision'), UPPER('&p_liability'), UPPER('&p_property'));
+new  13:       VALUES (TO_CHAR(salesinvseq.NEXTVAL,'FM099999'), 'Joe Smith', 'Steve Seller', SYSDATE, 'A12BINT2', 38439, 2000, (38439 - 2000), ((38439 - 2000) * 0.13), 200, 100, UPPER('M10SCL1'), 2500, UPPER('y'), UPPER('N'), UPPER('N'), UPPER('Y'));
+old  16:       VALUES (TO_CHAR(salesinvseq.CURRVAL,'FM099999'), UPPER('&p_ocode'), &p_saleprice);
+new  16:       VALUES (TO_CHAR(salesinvseq.CURRVAL,'FM099999'), UPPER('E01'), 34989);
+old  21:          WHERE serial = UPPER('&p_serial');
+new  21:          WHERE serial = UPPER('A12BINT2');
+
+PL/SQL procedure successfully completed.
+
+more...
+
+G_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------
+Sales Invoice Successfully Created.
+
+Press ENTER to continue...

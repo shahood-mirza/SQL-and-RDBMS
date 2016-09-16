@@ -1,0 +1,17 @@
+----------------------OUTPUT------------------------------------
+
+PL/SQL procedure successfully completed.
+
+more...
+
+G_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------
+                        PROSPECT LIST
+Name______________      Want___________________________________________
+Emily Smith             2008 Silver ACURA w/EXTENDED WARRANTY(E01)
+John Smith              2013 Blue ACURA w/HOOD ORNAMENT(SD1)
+Shahood Mirza           2011 Silver MERCEDES w/TINTED SUN ROOF(S22)
+Shahood Mirza           2012 Silver MERCEDES w/DELUXE SOUND SYSTEM(H35)
+
+
+Press ENTER to continue..

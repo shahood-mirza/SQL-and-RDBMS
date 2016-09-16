@@ -1,0 +1,38 @@
+----------------------OUTPUT------------------------------------
+
+Enter Customer Name: Steve Smith
+Enter Customer Street with Number: 656 Fake St.   
+Enter Customer City: Ajax
+Enter Customer Province: Ontario
+Enter Car Serial Number (MYYCMDL#): A07RTSX6
+Enter Car Make: ACURA
+Enter Car Model: TSX
+Enter Car Year: 2007
+Enter Car Colour: RED
+Enter Car Freight Cost: 2540
+Enter Car Total Cost: 25403
+Enter Option Code: E01
+Enter Option Sale Price: 2000
+Enter Salesman Name: Steve Seller
+Enter Total Sale Price: 29434
+Enter Discount Amount: 2000
+Enter License Fee: 100
+Enter Commission: 2000
+old   7:       VALUES ('&p_cname', '&p_cstreet', '&p_ccity', '&p_cprov');
+new   7:       VALUES ('Steve Smith', '656 Fake St.', 'Ajax', 'Ontario');
+old  10:       VALUES (UPPER('&p_serial'), '&p_cname', UPPER('&p_make'), UPPER('&p_model'), '&p_cyear', '&p_color', 'Standard', 'Standard', '&p_freight', '&p_totalcost');
+new  10:       VALUES (UPPER('A07RTSX6'), 'Steve Smith', UPPER('ACURA'), UPPER('TSX'), '2007', 'RED', 'Standard', 'Standard', '2540', '25403');
+old  13:       VALUES (TO_CHAR(salesinvseq.NEXTVAL,'FM099999'), '&p_cname', '&p_salesman', SYSDATE, '&p_serial', &p_totalprice, &p_discount, (&p_totalprice - &p_discount), ((&p_totalprice - &p_discount) * 0.13), &p_licfee, &p_commission);
+new  13:       VALUES (TO_CHAR(salesinvseq.NEXTVAL,'FM099999'), 'Steve Smith', 'Steve Seller', SYSDATE, 'A07RTSX6', 29434, 2000, (29434 - 2000), ((29434 - 2000) * 0.13), 100, 2000);
+old  16:       VALUES (TO_CHAR(salesinvseq.CURRVAL,'FM099999'), UPPER('&p_ocode'), &p_saleprice);
+new  16:       VALUES (TO_CHAR(salesinvseq.CURRVAL,'FM099999'), UPPER('E01'), 2000);
+old  21:          WHERE serial = UPPER('&p_serial');
+new  21:          WHERE serial = UPPER('A07RTSX6');
+
+PL/SQL procedure successfully completed.
+
+more...
+
+G_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------
+Sales Invoice Successfully Created.

@@ -1,0 +1,32 @@
+----------------------OUTPUT------------------------------------
+
+Enter Sales Invoice Number (XXXXXX): 245933
+old  10:          WHERE saleinv = UPPER('&p_saleinv');
+new  10:          WHERE saleinv = UPPER('245933');
+old  42:       :g_output := 'Sales Invoice No.&p_saleinv Could Not Be Found';
+new  42:       :g_output := 'Sales Invoice No.245933 Could Not Be Found';
+
+PL/SQL procedure successfully completed.
+
+more...
+
+G_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------
+                        VEHICLE SALES ACCOUNTING SUPPLEMENT
+
+Invoice No.  245933     Customer:  Steve Smith          Date:  10-AUG-12
+
+                Item            Cost            Sale
+Serial#         A07RTSX6        25403           27434
+                E01             270.5           2000
+
+
+Freight and Preperation         2540            2540
+Tax                             3566.42         3566.42
+License Fees                    100             100
+Other
+Commission                      2000
+TOTAL                           31779.92        35540.42
+
+
+Press ENTER to continue...

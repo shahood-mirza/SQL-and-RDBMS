@@ -1,0 +1,51 @@
+----------------------OUTPUT------------------------------------
+
+Enter Sales Invoice Number (XXXXXX): 245932
+old  12:          WHERE saleinv = UPPER('&p_saleinv');
+new  12:          WHERE saleinv = UPPER('245932');
+old  71:       :g_output := 'Sales Invoice No.&p_saleinv Could Not Be Found';
+new  71:       :g_output := 'Sales Invoice No.245932 Could Not Be Found';
+
+PL/SQL procedure successfully completed.
+
+more...
+
+G_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------
+                        SPECIALTY IMPORTS
+                        SALES INVOICE
+
+Invoice No.  245932                             Date:  10-AUG-12
+SOLD TO:   Name:  Joe Smith
+           Address:  123 Fake Street
+           City:  Toronto
+           Province:  Ontario             Postal Code:  M5W 2R9
+           Telephone:  905-343-9955
+Salesman:  Steve Seller
+
+----------------------------------------------------------------------
+| Serial Number   |   Make    |   Model   |   Year   |   Colour      |
+| A12BINT2        | ACURA     |   INTEGRA |   2012   |   BLUE        |
+----------------------------------------------------------------------
+
+                Insurance Coverage Includes
+        Fire and Theft  [Y]     Liability       [N]
+        Collision       [N]     Property Damage [Y]
+
+                        OPTIONS
+Code            Description                             Price
+E01             EXTENDED WARRANTY                       34989
+
+                        TRADE-IN
+        Serial No.      Make      Model   Year  Allowance
+        M10SCL1         MERCEDES  S-CLASS 2010  2500
+
+       Total Price: $38439
+Trade-in Allowance: $2500
+          Discount: $2000
+               Net: $36439
+             Taxes: $4737.07
+     Total Payable: $41176.07
+
+
+Press ENTER to continue...

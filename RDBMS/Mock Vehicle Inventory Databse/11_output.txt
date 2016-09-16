@@ -1,0 +1,23 @@
+----------------------OUTPUT------------------------------------
+
+Enter Customer Name: Emily Smith 
+Enter Prospect Car Make: ACURA
+Enter Prospect Car Model: RSX
+Enter Prospect Car Year: 2008
+Enter Prospect Car Colour: Silver
+Enter Prospect Car Trim: HNT
+Enter Prospect Car Option Code: E01
+old   7:    VALUES ('&p_cname', UPPER('&p_make'), UPPER('&p_model'), '&p_cyear', '&p_color', '&p_trim', UPPER('&p_ocode'));
+new   7:    VALUES ('Emily Smith', UPPER('ACURA'), UPPER('RSX'), '2008', 'Silver', 'HNT', UPPER('E01'));
+old  12:          WHERE cyear = '&p_cyear';
+new  12:          WHERE cyear = '2008';
+
+PL/SQL procedure successfully completed.
+
+more...
+
+G_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Press ENTER to continue...

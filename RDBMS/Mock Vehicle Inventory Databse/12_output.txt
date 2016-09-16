@@ -1,0 +1,33 @@
+----------------------OUTPUT------------------------------------
+
+Enter Customer Name: Emily Smith
+Enter Prospect Car Make: ACURA
+Enter Prospect Car Model: RSX
+Enter Prospect Car Year: 2008
+Enter Prospect Car Colour: Silver
+Enter Prospect Car Trim: HNT
+Enter Prospect Car Option Code: E01
+old   3:       WHERE cname = '&p_cname'
+new   3:       WHERE cname = 'Emily Smith'
+old   4:       AND   make  = UPPER('&p_make')
+new   4:       AND   make  = UPPER('ACURA')
+old   5:       AND   model = UPPER('&p_model')
+new   5:       AND   model = UPPER('RSX')
+old   6:       AND   cyear = '&p_cyear'
+new   6:       AND   cyear = '2008'
+old   7:       AND   color = '&p_color'
+new   7:       AND   color = 'Silver'
+old   8:       AND   trim  = '&p_trim'
+new   8:       AND   trim  = 'HNT'
+old   9:       AND   ocode = UPPER('&p_ocode');
+new   9:       AND   ocode = UPPER('E01');
+
+PL/SQL procedure successfully completed.
+
+more...
+
+G_OUTPUT
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+Press ENTER to continue...

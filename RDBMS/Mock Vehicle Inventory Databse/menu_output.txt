@@ -1,0 +1,22 @@
+----------------------OUTPUT------------------------------------
+
+
+Welcome To Specialty Imports     Database v3.45r40
+Press Ctrl-C to Quit at Any Time
+----------------------------------------------------
+
+1.  Create a Sales Invoice
+2.  Inquire a Sales Invoice
+3.  Create a Vehicle Inventory Record
+4.  Inquire a Vehicle Inventory Record
+5.  Create an Accounting Sales Supplement
+6.  Inquire an Accounting Sales Supplement
+7.  Create a Service Work Order
+8.  Inquire a Service Work Order
+9.  Create a Customer Entry
+10. Inquire a Customer
+11. Create a Prospect Entry
+12. Delete a Prospect Entry
+13. Generate a Prospect List
+
+Enter Choice #: 
